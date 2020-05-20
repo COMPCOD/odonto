@@ -1,0 +1,45 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color = "primary">
+    <ion-buttons slot="start">
+      <ion-menu-button color = "light"></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Literatura</ion-title>
+    <ion-button href="/dashboard/dashboard" slot="end">
+      <ion-icon name="close" slot="end"></ion-icon>
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">{{ folder }}</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <div class="list-group">
+
+    <ion-item-group>
+
+      <ion-item href="/pdf1" >
+        PDF O emprego  dos  anestésicos  locais  em  Odontologia: Revisão de Literatura
+         <ion-button slot="end" href="/pdf1" color="secondary">Ler</ion-button>
+      </ion-item>
+
+    <ion-item href="/pdf2"> 
+        PDF Manual de Anestesia Local
+      <ion-button slot="end" href="/pdf2" color="secondary">Ler</ion-button>
+    </ion-item>
+
+    <ion-item href="/pdf3">
+        PDF Anestesiadedentes mandibulares posteriores com pulpite irreversível e sintomatologia dolorosa
+      <ion-button slot="end" href="/pdf3" color="secondary">Ler</ion-button>
+    </ion-item>
+
+    <ion-item href="/pdf4">
+        PDF Terapêutica Medicamentosa em Odontologia
+      <ion-button slot="end" href="/pdf4" color="secondary">Ler</ion-button>
+    </ion-item>
+
+    </ion-item-group>
+  </div>
+</ion-content>
