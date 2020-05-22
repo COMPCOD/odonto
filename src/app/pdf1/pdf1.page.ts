@@ -5,15 +5,19 @@ import {DomSanitizer, SafeResourceUrl} from "@angular/platform-browser"
   selector: 'app-pdf1',
   templateUrl: './pdf1.page.html',
   styleUrls: ['./pdf1.page.scss'],
+  template: `
+  <pdf-viewer [src]="pdfSrc"
+              
+
+  ></pdf-viewer>
+  `
 })
 export class Pdf1Page implements OnInit {
-public folder: string;
-vidUrl: SafeResourceUrl;
-constructor(private domSatizer:DomSanitizer) { }
+pdfSrc="assets/artigo1.pdf";
+constructor() { }
 
   ngOnInit() {
-    this.vidUrl=
-    this.domSatizer.bypassSecurityTrustResourceUrl("https://redetuxnet.com.br/odonto/artigo1.pdf");
+
   }
 
 }
